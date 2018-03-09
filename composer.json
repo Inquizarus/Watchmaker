@@ -1,0 +1,13 @@
+{
+    "name": "inquizarus/stopwatch",
+    "description": "Small library for watching time",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Conny Karlsson",
+            "email": "connykarlsson9@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {}
+}

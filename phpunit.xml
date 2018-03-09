@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit bootstrap="vendor/autoload.php" colors="true">
+    <testsuites>
+        <testsuite name="Stopwatch Test Suite">
+            <directory suffix="Test.php">./tests/Unit/</directory>
+        </testsuite>
+    </testsuites>
+
+    <!-- Whitelist for code coverage -->
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./src</directory>
+            <exclude>
+                <directory suffix=".php">./vendor/</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+
+    <logging>
+        <!--
+        <log type="coverage-html" target="./coverage/report" lowUpperBound="35"
+             highLowerBound="70"/>
+        <log type="coverage-clover" target="./coverage/coverage.xml"/>
+        <log type="coverage-php" target="./coverage/coverage.serialized"/>
+        <log type="coverage-text" target="php://stdout" showUncoveredFiles="false"/>
+        <log type="junit" target="./coverage/logfile.xml" logIncompleteSkipped="false"/>
+        <log type="testdox-html" target="./coverage/testdox.html"/>
+        <log type="testdox-text" target="./coverage/testdox.txt"/>
+        -->
+    </logging>
+
+</phpunit>
