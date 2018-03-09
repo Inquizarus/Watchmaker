@@ -2,7 +2,7 @@
 
 <phpunit bootstrap="vendor/autoload.php" colors="true">
     <testsuites>
-        <testsuite name="Stopwatch Test Suite">
+        <testsuite name="Watchmaker Test Suite">
             <directory suffix="Test.php">./tests/Unit/</directory>
         </testsuite>
     </testsuites>
